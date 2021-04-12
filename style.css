@@ -128,6 +128,7 @@ header ul li a {
 {
     section {
         padding: 40px;
+        padding-bottom: 140px;
     }
     header {
         padding: 20px 40px;
@@ -149,6 +150,10 @@ header ul li a {
         transition: 0.2s;
         visibility: hidden;
         opacity: 0;
+    }
+    header ul.active {
+        visibility: visible;
+        opacity: 1;
     }
     header ul li a {
         color: #111;
@@ -177,5 +182,37 @@ header ul li a {
         background-repeat: no-repeat;
         background-position: center;
         filter: invert(1);
+    }
+    .content {
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    .content .textBox {
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    .content .textBox h2 {
+        font-size: 3em;
+    }
+    .content .textBox a {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+    .content .imgBox {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .content .imgBox img {
+        max-width: 150px;
+    }
+    .tumb li img {
+        max-width: 30px;
+    }
+    .sci {
+        right: 0;
+        background: rgba(0,0,0,0.2);
     }
 }
