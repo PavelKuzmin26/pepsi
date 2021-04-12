@@ -32,9 +32,9 @@
             </div>
         </div>
         <ul class="tumb">
-            <li><img src="img/pepsi001.png" alt="pepsi"></li>
-            <li><img src="img/pepsi002.png" alt="pepsi"></li>
-            <li><img src="img/pepsi003.png" alt="pepsi"></li>
+            <li><img src="img/pepsi001.png" alt="pepsi" onclick="imgSlider('img/pepsi001.png');changeColor('#0062be')"></li>
+            <li><img src="img/pepsi002.png" alt="pepsi" onclick="imgSlider('img/pepsi002.png');changeColor('#e60c2c')"></li>
+            <li><img src="img/pepsi003.png" alt="pepsi" onclick="imgSlider('img/pepsi003.png');changeColor('#1e1e1e')"></li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="img/facebook.png" alt="fb"></a></li>
@@ -44,7 +44,11 @@
     </section>
     <script>
         function imgSlider(anything) {
-            document.querySelector('.pepsi').scr = anything;
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
         }
     </script>
 </body>
